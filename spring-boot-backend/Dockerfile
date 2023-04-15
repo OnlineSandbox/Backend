@@ -6,6 +6,8 @@ ENV POSTGRES_PASSWORD "postgres"
 
 WORKDIR /app
 
+RUN mkdir -p target
+
 COPY target/*.jar /app/app.jar
 
 EXPOSE 80
