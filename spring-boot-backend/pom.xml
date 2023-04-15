@@ -50,9 +50,6 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<version>${project.parent.version}</version>
 				<configuration>
-					<mainClass>
-						com/sandboxbackend/springbootbackend/SpringBootBackendApplication.java
-					</mainClass>
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>
@@ -60,20 +57,6 @@
 						</exclude>
 					</excludes>
 				</configuration>
-				<executions>
-        				<execution>
-         					<goals>
-           						<goal>
-								repackage
-							</goal>
-          					</goals>
-          					<configuration>
-            						<mainClass>
-								com/sandboxbackend/springbootbackend/SpringBootBackendApplication.java
-							</mainClass>
-          					</configuration>
-        				</execution>
-     				</executions>
 			</plugin>
 		</plugins>
 	</build>
