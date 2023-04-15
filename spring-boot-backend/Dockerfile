@@ -6,7 +6,9 @@ ENV POSTGRES_PASSWORD "postgres"
 
 WORKDIR /app
 
-RUN mkdir -p target
+RUN mkdir -p /app && \
+    mkdir -p /target && \
+    touch /target/my-app.jar
 
 COPY target/*.jar /app/app.jar
 
