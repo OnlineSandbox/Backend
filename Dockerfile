@@ -17,7 +17,7 @@ EXPOSE 80
 ENV POSTGRES_URL "postgresql://localhost:5432/postgres"
 ENV POSTGRES_USER "postgres"
 ENV POSTGRES_PASSWORD "postgres"
-ENTRYPOINT /usr/local/openjdk-17/bin/java -Dloader.main=src/main/java/com/sandboxbackend/springbootbackend/SpringBootBackendApplication.java \
+ENTRYPOINT /usr/local/openjdk-17/bin/java -Dloader.main=src/main/java/com/sandboxbackend/springbootbackend/SpringBootBackendApplication \
     -jar /usr/local/lib/spring-boot-backend.jar \
     --spring.datasource.url=jdbc:${POSTGRES_URL} --server.port=80 \
     --spring.datasource.username=${POSTGRES_USER} --spring.datasource.password=${POSTGRES_PASSWORD}
