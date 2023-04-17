@@ -20,6 +20,7 @@ EXPOSE 80
 ENV POSTGRES_URL "postgresql://localhost:5432/postgres"
 ENV POSTGRES_USER "postgres"
 ENV POSTGRES_PASSWORD "postgres"
+ENV CLASSPATH "/usr/local/lib/*"
 ENTRYPOINT /usr/local/openjdk-17/bin/java \
     -cp /usr/local/lib/* \
     -jar /usr/local/lib/spring-boot-backend.jar \
