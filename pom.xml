@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.sandbox-backend</groupId>
-	<artifactId>spring-boot-backend</artifactId>
+	<artifactId>backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spring-boot-backend</name>
 	<description>Demo project for Spring Boot</description>
