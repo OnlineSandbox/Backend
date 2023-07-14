@@ -17,7 +17,8 @@ public class TestService {
 
     public Test saveEntry(){
         Test test = new Test();
-        testRepository.save(new Test());
+        testRepository.save(test);
+        log.info("saveTestEntry with id: " + test.getId());
         return test;
     }
 }

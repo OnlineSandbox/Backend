@@ -16,7 +16,7 @@ public class TestController {
 
     @PostMapping("/test")
     @ResponseStatus(HttpStatus.CREATED)
-    public Test saveOverworldGameResult() {
+    public Test saveTestEntry() {
         return testService.saveEntry();
     }
 }
