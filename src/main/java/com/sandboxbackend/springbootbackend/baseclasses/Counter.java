@@ -13,9 +13,10 @@ import lombok.experimental.FieldDefaults;
 @Data
 @NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class Test {
+public class Counter {
 
     @Id
     @GeneratedValue(generator = "uuid")
     UUID id;
+    Integer counterValue = 0;
 }

@@ -1,10 +1,12 @@
 package com.sandboxbackend.springbootbackend.repositories;
 
-import com.sandboxbackend.springbootbackend.baseclasses.Test;
+import com.sandboxbackend.springbootbackend.baseclasses.Counter;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.UUID;
 
 @Repository
-public interface TestRepository extends JpaRepository<Test, UUID> {}
+public interface CounterRepository extends JpaRepository<Counter, UUID> {
+    Counter findFirstByOrderById();
+}

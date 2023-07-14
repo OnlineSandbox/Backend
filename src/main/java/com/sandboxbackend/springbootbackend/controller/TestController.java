@@ -1,7 +1,7 @@
 package com.sandboxbackend.springbootbackend.controller;
 
-import com.sandboxbackend.springbootbackend.baseclasses.Test;
-import com.sandboxbackend.springbootbackend.services.TestService;
+import com.sandboxbackend.springbootbackend.baseclasses.Counter;
+import com.sandboxbackend.springbootbackend.services.CounterService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -12,11 +12,11 @@ import org.springframework.web.bind.annotation.*;
 public class TestController {
 
     @Autowired
-    TestService testService;
+    CounterService testService;
 
-    @PostMapping("/test")
+    @PostMapping("/counter")
     @ResponseStatus(HttpStatus.CREATED)
-    public Test saveTestEntry() {
-        return testService.saveEntry();
+    public Counter increaseCounter() {
+        return testService.increaseCounter();
     }
 }
