@@ -13,7 +13,8 @@ public class SpringBootBackendConfiguration implements WebMvcConfigurer {
     public void addCorsMappings(final CorsRegistry registry) {
         // allow CORS requests for all resources and HTTP methods from the frontend origin
         registry.addMapping("/**")
-            .allowedMethods("OPTIONS", "HEAD", "GET", "PUT", "POST", "DELETE")
+            .allowedHeaders("*")
+            .allowedMethods("*")
             .allowedOrigins("*");
     }
 }
