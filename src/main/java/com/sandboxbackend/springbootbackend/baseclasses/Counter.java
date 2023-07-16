@@ -18,5 +18,5 @@ public class Counter {
     @Id
     @GeneratedValue(generator = "uuid")
     UUID id;
-    Integer counterValue = 0;
+    int counterValue = 0;
 }
